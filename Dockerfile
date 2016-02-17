@@ -21,6 +21,3 @@ VOLUME [ "/var/lib/tomcat7/webapps" ]
 
 EXPOSE 80 8080
 ENTRYPOINT [ "/usr/bin/supervisord" ]
-#ENTRYPOINT [ "/usr/sbin/nginx","-g","daemon off;" ]
-#ENTRYPOINT [ "/usr/share/tomcat7/bin/catalina.sh","run;" ]
-#ENTRYPOINT [ "/bin/bash" ]

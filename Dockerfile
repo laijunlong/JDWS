@@ -1,4 +1,4 @@
-FROM ubuntu 
+FROM ubuntu:latest 
 MAINTAINER adware
 ENV REFRESHED_AT 2016-1-24
 RUN apt-get update
@@ -21,6 +21,6 @@ VOLUME [ "/var/lib/tomcat7/webapps" ]
 
 EXPOSE 80 8080
 ENTRYPOINT [ "/usr/bin/supervisord" ]
-#ENTRYPOINT [ "/user/bin/nginx","-g","daemon off;" ]
+#ENTRYPOINT [ "/usr/sbin/nginx","-g","daemon off;" ]
 #ENTRYPOINT [ "/usr/share/tomcat7/bin/catalina.sh","run;" ]
 #ENTRYPOINT [ "/bin/bash" ]

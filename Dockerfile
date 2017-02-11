@@ -1,6 +1,6 @@
 FROM ubuntu:latest 
-MAINTAINER adware
-ENV REFRESHED_AT 2016-1-24
+MAINTAINER laijunlong1987 "laijunlong1987@gmail.com"
+ENV REFRESHED_AT 2017-2-11
 RUN apt-get update
 RUN apt-get -y -q install nginx tomcat7 default-jdk supervisor
 RUN mkdir -p /var/www/html
